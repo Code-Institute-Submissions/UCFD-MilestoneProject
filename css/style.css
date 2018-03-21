@@ -113,4 +113,43 @@ footer {
     background-color: #ff4444;
 }
 
+/*----------------------------------------index/ landing page*/
+
+.landing-container {
+    height: 100vh;
+
+    background: url("../images/background-image.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+.opaque-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.jumbotron {
+    background-color: transparent;
+}
+
+.jumbotron h1 {
+    font-family: Mina, sans-serif;
+    color: #fafafa;
+    font-size: 8em;
+    
+}
+
 /*----------------------------------------media query*/
