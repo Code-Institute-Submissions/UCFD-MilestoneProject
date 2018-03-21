@@ -9,6 +9,20 @@ body {
     color: #fafafa;
 }
 
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #919191;
+    color: white;
+    text-align: center;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
 /*---------------------------------------------hover.css styling*/
 
 /*---------------------------------------------header*/
@@ -20,7 +34,6 @@ body {
 }
 
 .menu-item {
-    text-transform: uppercase;
     font-family: Mina, sans-serif;
     font-weight: 300;
 }
@@ -60,18 +73,11 @@ body {
     color: #fafafa;
 }
 
-.navbar-default .navbar-brand:hover {
-    color: #ff4444;
-    transition: all 0.35s ease-in-out;
-    -moz-transition: all 0.35s ease-in-out;
-    -webkit-transition: all 0.35s ease-in-out;
-    -o-transition: all 0.35s ease-in-out;
-}
-
 .navbar-default .navbar-nav>li>a {
     color: #fafafa;
 }
 
+.navbar-default .navbar-brand:hover,
 .navbar-default .navbar-nav>li>a:hover {
     color: #ff4444;
     transition: all 0.35s ease-in-out;
@@ -80,5 +86,31 @@ body {
     -o-transition: all 0.35s ease-in-out;
 }
 
-/*----------------------------------------media query*/
+/*----------------------------------------footer*/
 
+.footer {
+    font-family: Mina, sans-serif;
+    font-weight: 600;
+}
+
+.social-links li a i {
+    width: 40px;
+    height: 40px;
+    padding: 16px 0;
+    border-radius: 50%;
+    font-size: 24px;
+    line-height: 7px;
+    text-align: center;
+    color: #fafafa;
+    background: #515151;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.social-links li a i:hover {
+    background-color: #ff4444;
+}
+
+/*----------------------------------------media query*/
