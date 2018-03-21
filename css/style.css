@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Mina:100,200,300,400,500,600,700|Roboto:100,200,300,400,500,600,700');
 
 /*--------------------------------------default styling*/
+
 body {
     background-color: #515151;
     font-family: Roboto, sans-serif;
@@ -8,26 +9,76 @@ body {
     color: #fafafa;
 }
 
-/*---------------------------------------------colors*/
+/*---------------------------------------------hover.css styling*/
 
 /*---------------------------------------------header*/
 
 .logo {
-    color: #fafafa;
     font-family: Mina, sans-serif;
+    font-size: 24px;
     font-weight: 600;
 }
 
 .menu-item {
-    font-family: Mina, sans-serif;
-    font-weight: 400;
-    font-size: 20px;
     text-transform: uppercase;
-    text-align: center;
-    height: 40px;
+    font-family: Mina, sans-serif;
+    font-weight: 300;
 }
 
-.menu-item a {
-    color: #fafafa;
-    text-decoration: none;
+/*---------------------------------------------header-navbar*/
+
+.navbar {
+    margin-bottom: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border: 0;
+    background-color: transparent;
 }
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+}
+
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fafafa;
+    width: 30px;
+}
+
+.navbar-default .navbar-collapse {
+    border: 0;
+    width: 100%;
+}
+
+.navbar-default .navbar-brand {
+    color: #fafafa;
+}
+
+.navbar-default .navbar-brand:hover {
+    color: #ff4444;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #fafafa;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: #ff4444;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+/*----------------------------------------media query*/
+
