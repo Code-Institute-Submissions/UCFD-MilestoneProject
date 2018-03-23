@@ -1,16 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Mina:100,200,300,400,500,600,700|Roboto:100,200,300,400,500,600,700');
 
+
+
+
 /*--------------------------------------default styling*/
 
 body {
     background-color: #515151;
     font-family: Roboto, sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     color: #fafafa;
 }
 
 footer {
-    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -23,7 +25,35 @@ footer {
     text-transform: uppercase;
 }
 
+.bg-image {
+
+    background: url("../images/background-image.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+.opaque-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+
 /*---------------------------------------------hover.css styling*/
+
 
 /*---------------------------------------------header*/
 
@@ -38,6 +68,9 @@ footer {
     font-weight: 300;
 }
 
+
+
+
 /*---------------------------------------------header-navbar*/
 
 .navbar {
@@ -47,7 +80,7 @@ footer {
     left: 0;
     width: 100%;
     border: 0;
-    background-color: transparent;
+    background-color: #919191;
 }
 
 .navbar-default .navbar-toggle {
@@ -86,9 +119,12 @@ footer {
     -o-transition: all 0.35s ease-in-out;
 }
 
+
+
+
 /*----------------------------------------footer*/
 
-.footer {
+.footer-title {
     font-family: Mina, sans-serif;
     font-weight: 600;
 }
@@ -113,33 +149,11 @@ footer {
     background-color: #ff4444;
 }
 
+.footer-landing {
+    position: fixed;
+}
+
 /*----------------------------------------index/ landing page*/
-
-.landing-container {
-    height: 100vh;
-
-    background: url("../images/background-image.jpg") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-
-    z-index: -1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    position: relative;
-}
-
-.opaque-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-}
 
 .landing-title {
     font-family: Mina, sans-serif;
@@ -147,13 +161,21 @@ footer {
     font-size: 48px;
 }
 
+.bg-image-landing {
+    height: 100vh;
+}
+
 /*--------------------------------------------about*/
 
-.about-image {
-    height: 256px;
-    width: 256px;
-    
+.about-container {
+    margin-top: 60px;
 }
+
+.about-text {
+    padding-top: 10px;
+}
+
+
 
 /*----------------------------------------media query*/
 
@@ -161,5 +183,24 @@ footer {
     .landing-title {
         font-size: 8em;
     }
-    
+
+    .about-text {
+        padding-top: 0;
+        float: right;
+    }
+
+    .about-image {
+        /* referencing code from https://www.w3schools.com/css/css_positioning.asp*/
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        max-height: 80%;
+    }
+}
+
+@media(min-width:992px) {
+    .about-text {
+        font-size: 24px;
+        margin-bottom: 100px;
+    }
 }
