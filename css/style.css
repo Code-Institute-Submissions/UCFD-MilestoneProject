@@ -141,15 +141,16 @@ footer {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.jumbotron {
-    background-color: transparent;
-}
-
-.jumbotron h1 {
+.landing-title {
     font-family: Mina, sans-serif;
-    color: #fafafa;
-    font-size: 8em;
-    
+    font-weight: 700;
+    font-size: 48px;
 }
 
 /*----------------------------------------media query*/
+
+@media(min-width:768px) {
+    .landing-title {
+        font-size: 8em;
+    }
+}
