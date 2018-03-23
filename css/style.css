@@ -147,10 +147,19 @@ footer {
     font-size: 48px;
 }
 
+/*--------------------------------------------about*/
+
+.about-image {
+    height: 256px;
+    width: 256px;
+    
+}
+
 /*----------------------------------------media query*/
 
 @media(min-width:768px) {
     .landing-title {
         font-size: 8em;
     }
+    
 }
