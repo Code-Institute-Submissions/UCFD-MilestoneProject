@@ -3,6 +3,7 @@
 
 
 
+
 /*--------------------------------------default styling*/
 
 body {
@@ -50,10 +51,9 @@ footer {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-
-
-/*---------------------------------------------hover.css styling*/
-
+.top-spacing {
+    padding-top: 60px;
+}
 
 /*---------------------------------------------header*/
 
@@ -67,6 +67,7 @@ footer {
     font-family: Mina, sans-serif;
     font-weight: 300;
 }
+
 
 
 
@@ -122,6 +123,7 @@ footer {
 
 
 
+
 /*----------------------------------------footer*/
 
 .footer-title {
@@ -153,6 +155,7 @@ footer {
     position: fixed;
 }
 
+
 /*----------------------------------------index/ landing page*/
 
 .landing-title {
@@ -165,17 +168,19 @@ footer {
     height: 100vh;
 }
 
-/*--------------------------------------------about*/
 
-.about-container {
-    margin-top: 60px;
-}
+/*--------------------------------------------about*/
 
 .about-text {
     padding-top: 10px;
 }
 
 
+/*--------------------------------------------discography*/
+
+.discography-container {
+    z-index: 1;
+}
 
 /*----------------------------------------media query*/
 
@@ -191,9 +196,8 @@ footer {
 
     .about-image {
         /* referencing code from https://www.w3schools.com/css/css_positioning.asp*/
-        position: -webkit-sticky;
-        position: sticky;
-        top: 0;
+        position: fixed;
+        top: 60px;
         max-height: 80%;
     }
 }
