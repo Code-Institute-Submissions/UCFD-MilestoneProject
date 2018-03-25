@@ -34,7 +34,6 @@ footer {
     -o-background-size: cover;
     background-size: cover;
 
-    z-index: -1;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -82,6 +81,7 @@ footer {
     width: 100%;
     border: 0;
     background-color: #919191;
+    z-index: 1;
 }
 
 .navbar-default .navbar-toggle {
