@@ -67,10 +67,6 @@ footer {
     font-weight: 300;
 }
 
-
-
-
-
 /*---------------------------------------------header-navbar*/
 
 .navbar {
@@ -82,6 +78,7 @@ footer {
     border: 0;
     background-color: #919191;
     z-index: 1;
+    border-radius: 0;
 }
 
 .navbar-default .navbar-toggle {
@@ -124,11 +121,13 @@ footer {
 
 
 
-/*----------------------------------------footer*/
+/*----------------------------------------social links*/
 
-.footer-title {
-    font-family: Mina, sans-serif;
-    font-weight: 600;
+.social-links {
+    margin-top: -50px;
+    margin-right: 20px;
+    margin-bottom: 0;
+    padding: 5px;
 }
 
 .social-links li a i {
@@ -149,10 +148,6 @@ footer {
 
 .social-links li a i:hover {
     background-color: #ff4444;
-}
-
-.footer-landing {
-    position: fixed;
 }
 
 
