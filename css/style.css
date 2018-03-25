@@ -13,15 +13,6 @@ body {
     color: #fafafa;
 }
 
-footer {
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #919191;
-    color: white;
-    text-align: center;
-}
-
 .uppercase {
     text-transform: uppercase;
 }
@@ -168,8 +159,21 @@ footer {
 
 .about-text {
     padding-top: 10px;
+    background-color: #515151;
 }
 
+/*--------------------------------------------about-panel*/
+
+.panel-default {
+    background-color: #919191;
+    color: #fafafa;
+}
+
+.panel-title {
+    font-family: Mina, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
 
 /*--------------------------------------------discography*/
 
@@ -185,6 +189,7 @@ footer {
     .about-text {
         padding-top: 0;
         float: right;
+        background-color: #515151;
     }
 
     .about-image {
