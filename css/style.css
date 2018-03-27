@@ -173,7 +173,63 @@ footer {
 
 /*--------------------------------------------discography*/
 
+.song-list {
+    color: #fafafa;
+}
 
+.song-title {
+    font-family: Mina, sans-serif;
+    font-weight: 600;
+}
+
+.song-list .song-title {
+    font-size: 30px;
+}
+
+.mv-item .song-title {
+    font-size: 22px;
+}
+
+.song-list i {
+    padding-left: 10px;
+    color: #fafafa;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+
+/* referencing code from https://benmarshall.me/responsive-iframes/ */
+
+.mv-item {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+}
+
+.mv-item iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* end of referenced code */
+
+.mv-list {
+    margin-right: 5%;
+}
+
+.song-list i:hover {
+    color: #ff4444;
+}
+
+.internal-link {
+    display: none;
+}
 
 /*----------------------------------------media query*/
 
@@ -192,6 +248,14 @@ footer {
         position: fixed;
         top: 60px;
         max-height: 80%;
+    }
+
+    .internal-link {
+        display: inline-block;
+    }
+
+    .mobile-link {
+        display: none;
     }
 }
 
