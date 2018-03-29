@@ -232,6 +232,10 @@ footer {
     display: none;
 }
 
+.song-item {
+    margin-bottom: 20px;
+}
+
 /*----------------------------------------media query*/
 
 @media(min-width:768px) {
