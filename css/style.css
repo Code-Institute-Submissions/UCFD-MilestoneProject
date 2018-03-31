@@ -190,11 +190,7 @@ footer {
 }
 
 .song-list .song-title {
-    font-size: 30px;
-}
-
-.mv-item .song-title {
-    font-size: 22px;
+    font-size: 24px;
 }
 
 .song-list i {
@@ -215,7 +211,7 @@ footer {
     height: 0;
     overflow: hidden;
     padding-bottom: 56.25%;
-    margin-bottom: 100%;
+    margin-bottom: 100vh;
 }
 
 .mv-item iframe {
