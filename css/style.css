@@ -4,6 +4,7 @@
 
 
 
+
 /*--------------------------------------default styling*/
 
 body {
@@ -45,6 +46,7 @@ body {
     padding-top: 60px;
 }
 
+
 /*---------------------------------------------header*/
 
 .logo {
@@ -57,6 +59,7 @@ body {
     font-family: Mina, sans-serif;
     font-weight: 300;
 }
+
 
 /*---------------------------------------------header-navbar*/
 
@@ -112,6 +115,7 @@ body {
 
 
 
+
 /*----------------------------------------social links*/
 
 .social-links {
@@ -142,6 +146,7 @@ body {
 }
 
 
+
 /*----------------------------------------index/ landing page*/
 
 .landing-title {
@@ -153,6 +158,7 @@ body {
 .bg-image-landing {
     height: 100vh;
 }
+
 
 
 /*--------------------------------------------about*/
@@ -175,8 +181,73 @@ body {
     font-size: 20px;
 }
 
+
 /*--------------------------------------------discography*/
 
+.song-list {
+    color: #fafafa;
+}
+
+.song-title {
+    font-family: Mina, sans-serif;
+    font-weight: 600;
+}
+
+.song-list .song-title {
+    font-size: 24px;
+}
+
+.song-list i {
+    padding-left: 10px;
+    color: #fafafa;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+
+
+/* referencing code from https://benmarshall.me/responsive-iframes/ */
+
+.mv-item {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    margin-bottom: 100vh;
+}
+
+.mv-item iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+
+/* end of referenced code */
+
+.mv-list {
+    position: fixed;
+    height: 100%;
+    width: 63%;
+    overflow: hidden;
+}
+
+.song-list i:hover {
+    color: #ff4444;
+}
+
+.internal-link {
+    display: none;
+}
+
+.song-item {
+    margin-bottom: 20px;
+}
 
 
 /*----------------------------------------media query*/
@@ -197,6 +268,22 @@ body {
         position: fixed;
         top: 60px;
         max-height: 80%;
+    }
+
+    .internal-link {
+        display: inline-block;
+    }
+
+    .mobile-link {
+        display: none;
+    }
+
+    .song-list {
+        position: fixed;
+        width: 30%;
+        height: 100%;
+        overflow: scroll;
+        padding-bottom: 5%;
     }
 }
 
