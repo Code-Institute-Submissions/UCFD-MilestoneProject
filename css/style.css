@@ -5,6 +5,9 @@
 
 
 
+
+
+
 /*--------------------------------------default styling*/
 
 body {
@@ -47,6 +50,9 @@ body {
 }
 
 
+
+
+
 /*---------------------------------------------header*/
 
 .logo {
@@ -59,6 +65,9 @@ body {
     font-family: Mina, sans-serif;
     font-weight: 300;
 }
+
+
+
 
 
 /*---------------------------------------------header-navbar*/
@@ -116,6 +125,9 @@ body {
 
 
 
+
+
+
 /*----------------------------------------social links*/
 
 .social-links {
@@ -147,6 +159,9 @@ body {
 
 
 
+
+
+
 /*----------------------------------------index/ landing page*/
 
 .landing-title {
@@ -161,12 +176,18 @@ body {
 
 
 
+
+
+
 /*--------------------------------------------about*/
 
 .about-text {
     padding-top: 10px;
     background-color: #515151;
 }
+
+
+
 
 /*--------------------------------------------about-panel*/
 
@@ -180,6 +201,9 @@ body {
     font-weight: 600;
     font-size: 20px;
 }
+
+
+
 
 
 /*--------------------------------------------discography*/
@@ -206,8 +230,6 @@ body {
     -o-transition: all 0.35s ease-in-out;
 }
 
-
-
 /* referencing code from https://benmarshall.me/responsive-iframes/ */
 
 .mv-item {
@@ -226,7 +248,6 @@ body {
     height: 100%;
     border: 0;
 }
-
 
 /* end of referenced code */
 
@@ -250,6 +271,57 @@ body {
 }
 
 
+/*------------------------------------------------news*/
+
+.news-heading-list {
+    position: fixed;
+    width: 30%;
+    height: 100%;
+    overflow: scroll;
+}
+
+.news-heading-item {
+    display: block;
+    padding-bottom: 20px;
+}
+
+.news-heading-list .news-heading-item {
+    text-decoration: none;
+    color: #fafafa;
+    font-family: Mina, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.news-heading-list .news-heading-item:hover {
+    color: #ff4444;
+}
+
+.news-content-list {
+    position: fixed;
+    height: 90%;
+    width: 60%;
+    top: 60px;
+    overflow: scroll;
+}
+
+.news-content-item {
+    margin-bottom: 10%;
+}
+
+.news-content-item-heading {
+    color: #fafafa;
+    font-family: Mina, sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+
 /*----------------------------------------media query*/
 
 @media(min-width:768px) {
@@ -264,7 +336,6 @@ body {
     }
 
     .about-image {
-        /* referencing code from https://www.w3schools.com/css/css_positioning.asp*/
         position: fixed;
         top: 60px;
         max-height: 80%;
