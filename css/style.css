@@ -277,7 +277,7 @@ body {
     position: fixed;
     width: 30%;
     height: 100%;
-    overflow: scroll;
+    overflow: auto;
 }
 
 .news-heading-item {
@@ -303,10 +303,10 @@ body {
 
 .news-content-list {
     position: fixed;
-    height: 90%;
-    width: 60%;
+    height: 100%;
+    width: 63%;
     top: 60px;
-    overflow: scroll;
+    overflow: auto;
 }
 
 .news-content-item {
