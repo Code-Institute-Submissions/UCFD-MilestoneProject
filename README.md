@@ -15,4 +15,4 @@ a more appealing result.
 
 ### Update Log
 #### 15/04/2018
-Contact form has been implemented.
+- Contact form has been implemented.
