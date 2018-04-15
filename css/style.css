@@ -1,13 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Mina:100,200,300,400,500,600,700|Roboto:100,200,300,400,500,600,700');
 
 
-
-
-
-
-
-
-
 /*--------------------------------------default styling*/
 
 body {
@@ -49,26 +42,29 @@ body {
     padding-top: 60px;
 }
 
+.heading {
+    font-family: "Mina", sans-serif;
+    font-weight: 600;
+}
 
+.panel-default {
+    background-color: #919191;
+    color: #fafafa;
+}
 
-
+.wrapper {
+    padding: 10px;
+}
 
 /*---------------------------------------------header*/
 
 .logo {
-    font-family: Mina, sans-serif;
     font-size: 24px;
-    font-weight: 600;
 }
 
 .menu-item {
-    font-family: Mina, sans-serif;
     font-weight: 300;
 }
-
-
-
-
 
 /*---------------------------------------------header-navbar*/
 
@@ -120,14 +116,6 @@ body {
     -o-transition: all 0.35s ease-in-out;
 }
 
-
-
-
-
-
-
-
-
 /*----------------------------------------social links*/
 
 .social-links {
@@ -157,15 +145,9 @@ body {
     background-color: #ff4444;
 }
 
-
-
-
-
-
 /*----------------------------------------index/ landing page*/
 
 .landing-title {
-    font-family: Mina, sans-serif;
     font-weight: 700;
     font-size: 48px;
 }
@@ -174,11 +156,6 @@ body {
     height: 100vh;
 }
 
-
-
-
-
-
 /*--------------------------------------------about*/
 
 .about-text {
@@ -186,25 +163,11 @@ body {
     background-color: #515151;
 }
 
-
-
-
 /*--------------------------------------------about-panel*/
 
-.panel-default {
-    background-color: #919191;
-    color: #fafafa;
-}
-
 #about-panel .panel-title {
-    font-family: Mina, sans-serif;
-    font-weight: 600;
     font-size: 20px;
 }
-
-
-
-
 
 /*--------------------------------------------discography*/
 
@@ -212,12 +175,7 @@ body {
     color: #fafafa;
 }
 
-.song-title {
-    font-family: Mina, sans-serif;
-    font-weight: 600;
-}
-
-.song-list .song-title {
+.song-list .heading {
     font-size: 24px;
 }
 
@@ -270,7 +228,6 @@ body {
     margin-bottom: 20px;
 }
 
-
 /*------------------------------------------------news*/
 
 .news-heading-list {
@@ -288,8 +245,6 @@ body {
 .news-heading-list .news-heading-item {
     text-decoration: none;
     color: #fafafa;
-    font-family: Mina, sans-serif;
-    font-weight: 600;
     font-size: 16px;
     transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
@@ -315,12 +270,40 @@ body {
 
 .news-content-item-heading {
     color: #fafafa;
-    font-family: Mina, sans-serif;
-    font-weight: 600;
     font-size: 18px;
     margin-bottom: 20px;
 }
 
+.news-spacing {
+    height: 80%;
+}
+
+/*---------------------------------------------contact*/
+
+.center-form {
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+.form-control {
+    margin-bottom: 2px;
+}
+
+.send-button {
+    margin-top: 5px;
+    padding: 20px 80px;
+    color: #333;
+    font-size: 18px;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.send-button:hover {
+    color: #fafafa;
+    background-color: #ff4444;
+}
 
 /*----------------------------------------media query*/
 
@@ -356,11 +339,15 @@ body {
         overflow: scroll;
         padding-bottom: 5%;
     }
+
+    .center-form {
+        max-width: 70%;
+    }
 }
 
 @media(min-width:992px) {
     .about-text {
-        font-size: 24px;
+        font-size: 22px;
         margin-bottom: 100px;
     }
 }
