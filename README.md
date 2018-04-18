@@ -57,6 +57,9 @@ Bootstrap will be used as a starting point for responsive design and CSS styling
 - Paddings on the side varies depending on screen size.
 
 ### Update Log
+#### 18/04/2018
+- Testing document added.
+
 #### 15/04/2018
 - Contact form has been implemented in full.
 
