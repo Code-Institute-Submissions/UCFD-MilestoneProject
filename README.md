@@ -21,7 +21,7 @@ Bootstrap will be used as a starting point for responsive design and CSS styling
 
 #### Landing page
 - A simple landing page with a photo of the duo as the background and the duo's name in the middle of the page, in large fonts.
-- Font size will change depending on screen size so it will keep in ratio with other elements on the page regardless of screen size.
+- Font size will change depending on screen size so it will be kept in ratio with other elements on the page regardless of screen size.
 
 #### About
 - Utilizing bootstrap's grid system, responsive design for about page are achieved as follows:
