@@ -56,6 +56,26 @@ Bootstrap will be used as a starting point for responsive design and CSS styling
 - A bootstrap form with no backend attached (which is outside of the scope of this project).
 - Paddings on the side varies depending on screen size.
 
+## Technologies Used
+- [Bootstrap 3.3.7](https://getbootstrap.com/)
+	- Toolkit for frontend styling. It provides a framework for most of the styling without having to reinvent the wheel.
+- [Font Awesome](https://fontawesome.com/) is also used to for certain icons used in this project.
+
+## Testing
+Since this project revolves around user experience so it is more natural to test the website manually for better measurement of UX. Test results are documented in test-documents folder of this project but to summarise:
+- Tests are mainly involves checking if links are working as expected and UX transition between large and small screens.
+
+### Responsive design
+As part of requirements, web pages in this project needs to have a responsive design; that is layout of pages will change depending on screen size in order to maintain a high level of UX. Using a mobile first approach, the base design uses a single column layout and expanded to a 2 columns with 1:2 ratio design on large screens. Furthermore the navigation bar is a collapsible menu on small screens and expand to a full bar which is fixed on top when displayed on large screens.
+
+## Deployment
+As this project only involves frontend-only web pages there is no need for a proper deployment as the html files can be used as is; provided users have access to web browser, internet connection, as well as a copy of the project's html files. Nevertheless, for users that does not have access to the html files of this project, the need to host this project will rise and one of the simpler solution would be to host this project to [GitHub Pages](https://pages.github.com/). Since this project uses GitHub for version control it would be very easy to host this project on GitHub Pages.
+
+## Credits
+- Biography of GARNiDELiA in this projects are referred from [Wikipedia](https://en.wikipedia.org/wiki/Garnidelia)
+- Articles in this project originate from [HERE](https://www.jrocknews.com/tag/garnidelia)
+- Videos used in this project comes from GARNiDELiA official YouTube channel and the respective uploader.
+
 ### Update Log
 #### 18/04/2018
 - Testing document added.
